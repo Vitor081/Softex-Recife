@@ -1,0 +1,12 @@
+#Write code that counts down a bomb.
+#Telling you the number of seconds to explode. 
+#It should show the message “starting the countdown”, the seconds passed and, at the end, the message “BOOM!”.
+-----------------------------------------------------------------------------------------
+#Start of code
+
+import time
+print("Iniciando contagem regressiva")
+for i in range(10, 0, -1):
+    print(i)
+    time.sleep(1)
+print("BUM!")
