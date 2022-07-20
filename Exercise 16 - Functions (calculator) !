@@ -1,0 +1,47 @@
+def calculadora(n1, n2, operacao):
+    if operacao == 1:
+     return n1+n2
+
+    elif operacao == 2:
+      return n1-n2
+
+    elif operacao == 3:
+     return n1*n2
+
+    elif operacao == 4:
+     return n1 / n2
+
+
+
+while True:
+    print(" Bem vindo a calculadora!\n ---------------------------------------------------\n Escolha qual tipo de operação deve ser feita...")
+    print("---------------------------------------------------")
+    print (" Digite (1) pra SOMAR!\n Digite (2) pra SUBTRAIR!\n Digite (3) pra MULTIPLICAR!\n Digite (4) pra DIVIDIR!\n Digite (0) para SAIR!")
+    print("---------------------------------------------------")
+    operacao = int(input("Digite qual operação você quer fazer:"))
+
+    if operacao == 1:
+     n1 = int(input("Digite o primeiro valor:"))
+     n2 = int(input("Digite o segundo valor:"))
+     print("O resultado da operação é", (calculadora(n1, n2, operacao)))
+
+    elif operacao == 2:
+     n1 = float(input("Digite o primeiro valor:"))
+     n2 = float(input("Digite o segundo valor:"))
+     print("O resultado da operação é {}:".format(calculadora(n1, n2, operacao)))
+
+    elif operacao == 3:
+     n1 = float(input("Digite o primeiro valor:"))
+     n2 = float(input("Digite o segundo valor:"))
+     print("O resultado da operação é {}:".format(calculadora(n1, n2, operacao)))
+
+    elif operacao == 4:
+     n1 = float(input("Digite o primeiro valor:"))
+     n2 = float(input("Digite o segundo valor:"))
+     print("O resultado da operação é: {}". format(calculadora(n1, n2, operacao)))
+
+    elif operacao == 0:
+        print ("Obrigado(a) por usar nossa calculadora!")
+        break
+    else:
+        print(" !ERR0!\n Esse tipo de operação não existe!")
