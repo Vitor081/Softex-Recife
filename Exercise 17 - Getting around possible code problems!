@@ -1,0 +1,28 @@
+def calcular (idade):
+    if idade < 1922:
+     return print("Digite um ano entre 1922 e 2021")
+
+    elif idade > 2021:
+     return print("Digite um ano entre 1922 e 2021")
+
+    elif idade < 2022:
+      return 2022 - idade
+
+
+while True:
+    print('Bem vindo ao programa de calculo da sua idade!!')
+    print('-----------------------------------------------')
+    nome = str(input('Digite o seu nome:'))
+    idade = int(input('Digite o ano que você nasceu:'))
+
+    if idade < 1922:
+        print("!ERRO!\n Digite um ano entre 1922 e 2021")
+
+    elif idade > 2021:
+        print("!ERRO!\n Digite um ano entre 1922 e 2021")
+
+    elif idade < 2022:
+        print(f'{nome},sua idade é: {calcular(idade)} anos!')
+        break
+    else:
+        print ("!ERRO!\n Esse tipo de interação não existe!")
