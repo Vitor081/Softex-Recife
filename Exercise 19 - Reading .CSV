@@ -1,0 +1,24 @@
+import pandas as panda
+
+df = panda.read_csv("modulo3/notas_alunos.csv")
+
+def desempenhoalunos (dataframe):
+
+    media_alunos = (dataframe["nota_1"] + dataframe["nota_2"]) / 2
+    dataframe = dataframe.assign(media = media_alunos)
+    dataframe["DESEMPENHO"] = ''
+
+    dataframe.loc[(dataframe["media"] < 7) | (dataframe["faltas"] > 5), "DESEMPENHO"] = "REPROVADO!"
+    dataframe.loc[(dataframe["media"] >= 7) & (dataframe["faltas"] < 5), "DESEMPENHO"] = "APROVADO!"
+
+    print(dataframe)
+    maiorFalta = dataframe['faltas'].max()
+    mediaNotas = dataframe[['nota_1', 'nota_2']].median()
+    maiorMedia = dataframe['media'].max()
+
+    print("Maior quantidade de faltas: " + str(maiorFalta))
+    print("Média geral das notas: " + str(mediaNotas))
+    print("Maior média: " + str(maiorMedia))
+    dataframe.to_csv("modulo3/alunos_situacao.csv")
+
+desempenhoalunos (df)
