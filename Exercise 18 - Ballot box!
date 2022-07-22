@@ -1,0 +1,66 @@
+import enum
+
+
+class Candidatos(enum.Enum):
+    luis = 889
+    jair = 847
+    ciro = 515
+    branco = 0
+
+
+def votacao():
+    x = 0
+    y = 0
+    z = 0
+    nulo = 0
+    while True:
+
+        print('------------------------------------------------------------------')
+        print('BEM VINDO(A) A URNA ELEITORAL PARA VOTAÇÃO PRESIDENCIAVEL DE 2022!')
+        print('------------------------------------------------------------------')
+        print('ABAIXO SEGUE A LISTA DOS CANDIDATOS AO CARGO COM SEUS RESPECTIVOS NUMEROS...')
+        print('LUIS INACIO LULA DA SILVA (889)')
+        print('JAIR MESSIAS BOLSONARO (847)')
+        print('CIRO GOMES (515)')
+        print('NULO (0)')
+        print('------------------------------------------------------------------')
+        voto = input("INFORME SEU VOTO: ")
+
+        try:
+            votoNum = int(voto)
+            if (votoNum == Candidatos.luis.value):
+                x = x + 1
+            elif (votoNum == Candidatos.jair.value):
+                y = y + 1
+            elif (votoNum == Candidatos.ciro.value):
+                z = z + 1
+            else:
+                nulo = nulo + 1
+        except ValueError:
+            print('ERRO: DIGITE UM NUMERO!')
+            continue
+        else:
+            finalizar = input("DESEJA CONFIRMAR SEU VOTO?!")
+
+            if (finalizar == "Sim" or finalizar == "sim"):
+               print('SEU VOTO FOI CONFIRMADO COM SUCESSO!')
+            elif finalizar == 'fim' or 'f' or 'FIM' or 'F':
+                break
+            else:
+                continue
+
+    if (x > y and x > z):
+        print("O CANDIDATO VENCEDOR FOI LUIS INACIO LULA DA SILVA COM", x, "VOTOS!")
+    elif (y > x and y > z):
+        print("O CANDIDATO VENCEDOR FOI JAIR MESSIAS BOLSONARO COM", y, 'VOTOS!')
+    elif (z > x and z > y):
+        print("O CANDIDATO VENCEDOR FOI CIRO GOMES COM", z, 'VOTOS!')
+
+    print("QUANTIDADE DE VOTOS DE CADA CANDIDATO E NULOS: ")
+    print("LUIS INACIO LULA DA SILVA: " + str(x))
+    print("JAIR MESSIAS BOLSONAROY: " + str(y))
+    print("CIRO GOMES: " + str(z))
+    print("NULO: " + str(nulo))
+
+
+votacao()
