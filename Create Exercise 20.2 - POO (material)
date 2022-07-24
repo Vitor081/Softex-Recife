@@ -1,0 +1,28 @@
+class Caneca:
+    def __init__(self, nome, marca, cor):
+       self.nome = nome
+       self.marca = marca
+       self.cor = cor
+       self.status = 'ligada'
+
+
+    def beber(self):
+      self.status = 'Vazio'
+      print("Sua caneca esta vazia!")
+
+    def encher(self):
+      self.status = 'Enchendo...!'
+      print('Sua caneca esta enchendo...!')
+
+    def carregada(self):
+      self.status = 'Cheia!'
+      print('Sua caneca esta cheia!!')
+
+
+caneca081 = Caneca("Leoa Do Norte", "081", "azul")
+
+print("A caneca", caneca081, "é da marca", caneca081)
+
+caneca081.beber()
+caneca081.encher()
+caneca081.carregada()
