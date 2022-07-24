@@ -1,0 +1,30 @@
+import abc
+
+class Animal(abc.ABC):
+    def __init__(self, peso, idade, altura):
+           self.peso = peso
+           self.idade = idade
+           self.altura = altura
+
+class Cobra (Animal):
+    def move (self):
+        print('Eu rastejo!')
+
+
+class Humano (Animal):
+    def move (self):
+        print('Eu corro e ando!')
+
+class Peixe (Animal):
+    def move (self):
+        print ('Eu nado!')
+
+
+
+snake = Cobra (1, 3, 0.30)
+print(snake.peso)
+print(snake.idade)
+print(snake.altura)
+print(snake.move())
+
+
