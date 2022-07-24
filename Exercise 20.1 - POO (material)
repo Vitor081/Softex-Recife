@@ -1,0 +1,28 @@
+class Televisao:
+    def __init__(self, nome, marca, cor):
+       self.nome = nome
+       self.marca = marca
+       self.cor = cor
+       self.status = 'ligada'
+       self.mudar = 'mudar'
+
+    def acionar (self):
+      self.status = 'ligar'
+      print("Sua televisão esta ligada!")
+
+    def alterar (self):
+      self.mudar = 'Mudou de canal!'
+      print('Você mudou de canal!')
+
+    def standby(self):
+      self.status = 'desligar'
+      print('Sua televisão esta desligada!')
+
+
+samsung = Televisao("4k", "Samsung", "preta")
+
+print("A televisão", samsung, "é da marca", samsung)
+
+samsung.acionar()
+samsung.alterar()
+samsung.standby()
