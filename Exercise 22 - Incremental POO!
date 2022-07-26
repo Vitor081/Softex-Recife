@@ -1,0 +1,38 @@
+class Pessoa:
+    Total_Pessoas = 0
+    def __init__(self, nome, idade, teste=0):
+        self.nome = nome
+        self.idade = idade
+        self.teste = teste
+    def Exibir_Dados(self):
+        print(self.nome, self.idade)
+        return
+    def Maior_Idade(self):
+        if self.idade > 18:
+         print(f'{self.nome} é maior de idade!')
+        else:
+         print(f'{self.nome} é menor de idade!')
+    def Incremento_Teste(self):
+        if self.idade > 18:
+            self.idade +=1
+            print(f'{self.nome} ano que vem terá {self.idade} anos de idade !')
+        else:
+         self.idade += 1
+         print(f'{self.nome} ano que vem terá {self.idade} anos de idade !')
+
+
+
+p1 = Pessoa('João Vitor', 26)
+p1.Exibir_Dados()
+p1.Maior_Idade()
+p1.Incremento_Teste()
+
+p2 = Pessoa('Maria Eduarda', 12)
+p2.Exibir_Dados()
+p2.Maior_Idade()
+p2.Incremento_Teste()
+
+p3 = Pessoa('Edval Neto', 29)
+p3.Exibir_Dados()
+p3.Maior_Idade()
+p3.Incremento_Teste()
