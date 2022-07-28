@@ -1,0 +1,5 @@
+#.replace() Como o nome sugere ele substitui uma palavra por outra palavra.
+#Ele é usado no formato variável.replace(“alguma coisa” , “alguma outra coisa”).
+p = "Olá, mundo!"
+p2 = p.replace("mundo!", "Que dia bonito!")
+print(p2)
