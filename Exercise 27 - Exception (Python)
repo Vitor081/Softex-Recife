@@ -1,0 +1,6 @@
+try:
+    f = open('arquivo')
+except OSError:
+    print('Nao deu pra abrir o arquivo')
+else:
+    print('Arquivo aberto!')
