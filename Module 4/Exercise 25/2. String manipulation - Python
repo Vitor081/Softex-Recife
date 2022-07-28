@@ -1,0 +1,5 @@
+
+# len()
+# É usada para verificar quantos caracteres há na string.
+p = "Olá, mundo!"
+print(len(p))
