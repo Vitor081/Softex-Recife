@@ -1,0 +1,10 @@
+package primeiropacote;
+
+public class Atleta {
+    String nome;
+    String desempenho;
+
+    public Atleta(String nome, String desempenho){
+        this.nome = nome;
+        this.desempenho = desempenho;
+}
