@@ -1,0 +1,10 @@
+package segundo pacote;
+
+public Class Refeitorio;
+   String ultensilios;
+   String preparacoes;
+
+   public Refeitorio(String ultensilios, String preparacoes){
+      this.ultensilios = ultensilios;
+      this.preparacoes = preparacoes;
+}
