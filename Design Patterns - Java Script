@@ -1,0 +1,56 @@
+Aluno: João Vitor Regis Lima
+Formação: Back end
+
+PADRÕES DE PROJETO.
+
+Enunciado: Pesquise sobre padrões de projeto e escolha um para apresentar e descrever o seu funcionamento. 
+Além disso, explique quais as vantagens e desvantagens comparados a outros e mostre suas referências.
+
+---------------------------------------------------------------------------------------------------------
+
+Os Padrões de Projeto (como costumamos chamar em português), são um conjunto de padrões e técnicas bem definidas para problemas comuns, que foram testadas e definidas nas últimas décadas por diversos desenvolvedores e testadas a exaustão em vários casos de uso.
+
+Basicamente, utilizar um padrão destes te dá algum tipo de benefício quando estamos construindo nosso código. Este benefício pode ser uma manutenção mais rápida e simples, reutilização de código, facilidade de desenvolvimento, performance e muitos outros.
+
+Programadores JavaScript devem ter achado este título um pouco estranho, porque os DP’s são fortemente
+relacionados com conceitos da programação orientada à objetos (OOP). Então o que estamos fazendo tentando
+descrever padrões de projetos para uma linguagem dinâmica como o JavaScript? Este é justamente o ponto!
+
+Alguns padrões de projeto não são exclusivamente OOPs, portanto eles podem ser aplicados em qualquer local utilizando quaisquer linguagens! E, para aqueles padrões mais complexos de implementar em JavaScript, podemos recorrer ao TypeScript! Nosso grande aliado em transformar o JavaScript em uma linguagem tipada.
+
+Originalmente tínhamos uma lista bem concisa no livro mais famoso sobre o tema de Padrões de projeto, o livro do GoF (Gang of Four), que tem este nome justamente porque seus quatro autores são considerados os precursores e os
+maiores nomes da OOP até hoje. Os padrões descritos e empregados no livro ainda são usados até hoje, contudo, novos padrões estão sendo adicionados constantemente, o que faz com que as listas de padrões sempre estejam
+desatualizadas. Estes novos padrões contemplam linguagens mais recentes como o JavaScript.
+
+Todos os padrões são agrupados em classificações pelo livro do GoF, estas classificações são:
+• Padrões estruturais (Structural Patterns)
+• Padrões comportamentais (Behavioral Patterns)
+• Padrões criacionais (Creational Patterns)
+
+Não vamos dar muita atenção do porquê cada padrão tem este nome e nem como separar cada um, isto é para outro
+artigo, vamos focar aqui nos principais padrões e os mais comuns utilizados.
+--------------------------------------------------------------------------------------------------------
+
+PADRÃO ESCOLHIDO...
+
+Immediately Invoked Function Expressions (IIFE) {#immediately-invoked-function-expressions-iife }
+
+Este primeiro padrão é considerado por muitos como uma funcionalidade nativa do JavaScript e não um padrão em si, o
+que não é completamente errado, porém faz mais sentido considera-lo como um padrão, já que ele resolve um
+problema bastante simples. A da definição de um escopo no JS.
+
+CASOS DE USO...
+No geral podemos utilizar IIFEs para alguns casos bem simples. Simular variaveis estaticas e simular variaveis privadas!
+
+VANTAGENS DO IIFE...
+
+Não crie variáveis ​​e funções globais desnecessárias
+Funções e variáveis ​​definidas no IIFE não entram em conflito com outras funções e variáveis, mesmo que tenham o mesmo nome.
+Organize o código JavaScript.
+Torne o código JavaScript sustentável.
+
+CONCLUSÃO...
+
+Basicamente uma IIFE é uma função que é ao mesmo tempo definida e executada. Por conta de como os escopos no
+JavaScript funcionam, uma IIFE pode ser utilizada para criar campos e propriedades privadas em classes.
+
