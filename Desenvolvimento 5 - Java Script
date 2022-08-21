@@ -1,0 +1,27 @@
+let person = {
+    primeironome: 'João',
+    segundonome: 'Vitor',
+    idade: '26'
+};
+
+var vetor = ['time', 'estado_civil', 'profissão'];
+
+// duas funções, a primeira lista as propriedades do objeto e a segunda, os elementos do array.
+
+function propriedadesobjeto(){
+    
+    console.log(person.primeironome);
+    console.log(person.segundonome);
+    console.log(person.idade);
+
+};
+
+function elementosdoarray (){
+     for(const test of vetor){
+        console.log(test);
+     };
+
+};
+
+propriedadesobjeto();
+elementosdoarray();
